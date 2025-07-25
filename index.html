@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Curricular</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Malla Curricular - Programa X</h1>
+  <div class="grid">
+    <div class="semester">
+      <h2>Semestre 1</h2>
+      <div class="course" onclick="showInfo('Matemáticas I', 4, 'Ninguno')">Matemáticas I</div>
+      <div class="course" onclick="showInfo('Introducción a la programación', 3, 'Ninguno')">Intro Prog</div>
+    </div>
+    <div class="semester">
+      <h2>Semestre 2</h2>
+      <div class="course" onclick="showInfo('Matemáticas II', 4, 'Matemáticas I')">Matemáticas II</div>
+      <div class="course" onclick="showInfo('Estructuras de datos', 3, 'Intro Prog')">Estructuras</div>
+    </div>
+    <!-- Agrega más semestres aquí -->
+  </div>
+
+  <div id="infoBox" class="hidden"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
